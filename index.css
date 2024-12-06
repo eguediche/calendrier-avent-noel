@@ -1,0 +1,106 @@
+@import url('https://fonts.googleapis.com/css2?family=Antonio:wght@100..700&family=Chango&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=League+Spartan:wght@100..900&family=Lexend+Deca:wght@100..900&family=Manrope:wght@200..800&family=Red+Hat+Text:ital,wght@0,300..700;1,300..700&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.grid-parent{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+    background-color: #39511A;
+    gap: 10px;
+    padding: 10px;
+}
+
+img{
+    display: none;
+}
+
+p {
+    font-family: "Chango", sans-serif;
+    font-size: 4rem;
+    font-weight: 400;
+    line-height: 81.19px;
+    text-align: center;
+}
+
+button{
+    display: grid;
+    border-radius: 16px;
+    padding: 10%;
+    border: none;
+}
+
+.rouge{
+    background-color: #F26046;
+    color: white;
+}
+
+.rouge:hover{
+    background-color: white;
+    color: #F26046;
+}
+
+.jaune{
+    background-color: #FFC776;
+    color: #402909;
+}
+
+.jaune:hover{
+    background-color: #402909;
+    color: #FFC776;
+}
+
+.bleu{
+    background-color: #BAECE7;
+    color: #214441;
+}
+
+.bleu:hover{
+    background-color: #214441;
+    color: #BAECE7;
+}
+
+.violet{
+    background-color: #E5D3E4;
+    color: #4D254A;
+}
+
+.violet:hover{
+    background-color: #4D254A;
+    color: #E5D3E4;
+}
+
+@media screen and (min-width: 1024px){
+    .grid-parent{
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-rows: 1fr 1fr 1fr;
+        margin-top: 5%;
+        margin-bottom: 10%;
+        margin-left: 10%;
+        margin-right: 10%;
+    }
+
+    button{
+        display: flex;
+        justify-content: space-between;
+    }
+
+    img{
+        display: flex;
+        flex-direction: row;
+        padding: 10%;
+    }
+}
+
+
+@media screen and (min-width: 1440px){
+    .grid-parent{
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+        grid-template-rows: 1fr 1fr 1fr;
+    }
+    
+}
