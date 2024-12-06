@@ -1,106 +1,175 @@
-@import url('https://fonts.googleapis.com/css2?family=Antonio:wght@100..700&family=Chango&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=League+Spartan:wght@100..900&family=Lexend+Deca:wght@100..900&family=Manrope:wght@200..800&family=Red+Hat+Text:ital,wght@0,300..700;1,300..700&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Antonio:wght@100..700&family=Chango&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=League+Spartan:wght@100..900&family=Lexend+Deca:wght@100..900&family=Manrope:wght@200..800&family=Red+Hat+Text:ital,wght@0,300..700;1,300..700&display=swap");
 
-*{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
 }
 
-.grid-parent{
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
-    background-color: #39511A;
-    gap: 10px;
-    padding: 10px;
+.grid-parent {
+	display: grid;
+	grid-template-columns: 1fr 1fr;
+	grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+	background-color: #39511a;
+	gap: 10px;
+	padding: 10px;
 }
 
-img{
-    display: none;
+img {
+	display: none;
 }
 
 p {
-    font-family: "Chango", sans-serif;
-    font-size: 4rem;
-    font-weight: 400;
-    line-height: 81.19px;
-    text-align: center;
+	font-family: "Chango", sans-serif;
+	font-size: 4rem;
+	font-weight: 400;
+	line-height: 81.19px;
+	text-align: center;
 }
 
-button{
-    display: grid;
-    border-radius: 16px;
-    padding: 10%;
-    border: none;
+button {
+	display: grid;
+	border-radius: 16px;
+	padding: 10%;
+	border: none;
+	transition: transform 0.5s;
 }
 
-.rouge{
-    background-color: #F26046;
-    color: white;
+button:hover {
+	transform: scale(1.5) rotateY(-0.5turn);
 }
 
-.rouge:hover{
-    background-color: white;
-    color: #F26046;
+.rouge {
+	background-color: #f26046;
+	color: white;
 }
 
-.jaune{
-    background-color: #FFC776;
-    color: #402909;
+.rouge:hover {
+	background-color: white;
+	color: #f26046;
 }
 
-.jaune:hover{
-    background-color: #402909;
-    color: #FFC776;
+.R² {
+	display: none;
 }
 
-.bleu{
-    background-color: #BAECE7;
-    color: #214441;
+.jaune {
+	background-color: #ffc776;
+	color: #402909;
 }
 
-.bleu:hover{
-    background-color: #214441;
-    color: #BAECE7;
+.jaune:hover {
+	background-color: #402909;
+	color: #ffc776;
 }
 
-.violet{
-    background-color: #E5D3E4;
-    color: #4D254A;
+.J² {
+	display: none;
 }
 
-.violet:hover{
-    background-color: #4D254A;
-    color: #E5D3E4;
+.bleu {
+	background-color: #baece7;
+	color: #214441;
 }
 
-@media screen and (min-width: 1024px){
-    .grid-parent{
-        grid-template-columns: 1fr 1fr 1fr;
-        grid-template-rows: 1fr 1fr 1fr;
-        margin-top: 5%;
-        margin-bottom: 10%;
-        margin-left: 10%;
-        margin-right: 10%;
-    }
-
-    button{
-        display: flex;
-        justify-content: space-between;
-    }
-
-    img{
-        display: flex;
-        flex-direction: row;
-        padding: 10%;
-    }
+.bleu:hover {
+	background-color: #214441;
+	color: #baece7;
 }
 
+.B² {
+	display: none;
+}
 
-@media screen and (min-width: 1440px){
-    .grid-parent{
-        grid-template-columns: 1fr 1fr 1fr 1fr;
-        grid-template-rows: 1fr 1fr 1fr;
-    }
-    
+.violet {
+	background-color: #e5d3e4;
+	color: #4d254a;
+}
+
+.violet:hover {
+	background-color: #4d254a;
+	color: #e5d3e4;
+}
+
+.V² {
+	display: none;
+}
+
+.bleu:hover {
+	background-color: #214441;
+	color: #baece7;
+	.B {
+		display: none;
+	}
+	.B² {
+		display: flex;
+	}
+}
+
+.rouge:hover {
+	background-color: white;
+	color: #f26046;
+	.R {
+		display: none;
+	}
+	.R² {
+		display: flex;
+	}
+}
+
+.jaune:hover {
+	background-color: #402909;
+	color: #ffc776;
+	.J {
+		display: none;
+	}
+	.J² {
+		display: flex;
+	}
+}
+
+.violet:hover {
+	background-color: #4d254a;
+	color: #e5d3e4;
+	.V {
+		display: none;
+	}
+	.V² {
+		display: flex;
+	}
+}
+
+@media screen and (min-width: 1024px) {
+	.grid-parent {
+		grid-template-columns: 1fr 1fr 1fr;
+		grid-template-rows: 1fr 1fr 1fr;
+		margin-top: 5%;
+		margin-bottom: 10%;
+		margin-left: 10%;
+		margin-right: 10%;
+	}
+
+	button {
+		display: flex;
+		justify-content: space-between;
+	}
+
+	img {
+		display: flex;
+		flex-direction: row;
+		padding: 10%;
+	}
+}
+
+@media screen and (min-width: 1440px) {
+	.grid-parent {
+		grid-template-columns: 1fr 1fr 1fr 1fr;
+		grid-template-rows: 1fr 1fr 1fr;
+	}
+
+	button {
+		width: 100%;
+		height: 100%;
+		text-align: center;
+	}
 }
