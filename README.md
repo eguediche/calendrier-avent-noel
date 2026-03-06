@@ -100,6 +100,6 @@ Si vous parcourez mon profil GitHub, vous pouvez consulter mes **projets plus r�
 
 ---
 
-⭐ Ce projet reste épinglé comme **un jalon dans mon parcours de développeur**.
+⭐ Ce projet reste épinglé comme **le début de mon parcours de développeur**.
 
-*⭐ This project stays pinned as **a milestone in my developer journey**.*
+*⭐ This project stays pinned as **the beginning of my development journey**.*
