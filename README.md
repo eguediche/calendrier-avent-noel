@@ -25,7 +25,7 @@ project/
 ├── index.html        # Main HTML page
 ├── index.css         # Main stylesheet
 │
-└── assets         # Images (put in root, not in a real
+└── assets         # Images (put in root, not in a  folder)
 ```
 
 Since this was an early project, the structure is **minimal and not heavily modularized**.
